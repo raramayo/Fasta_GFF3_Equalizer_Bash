@@ -1,5 +1,5 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10905863.svg)](https://doi.org/10.5281/zenodo.10905863)
-# Fasta_Seq_Prepare_Bash
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.11396812.svg)](https://doi.org/10.5281/zenodo.11396812)
+# Fasta_GFF3_Equalizer_Bash
 ![alt text](https://github.com/raramayo/Fasta_GFF3_Equalizer_Bash/blob/main/Images/Fasta_GFF3_Equalizer_Logo.png)
 
 ## Motivation
