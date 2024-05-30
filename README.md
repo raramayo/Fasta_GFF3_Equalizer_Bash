@@ -100,8 +100,8 @@ due to network traffic,
 DEPENDENCIES:
  GNU AWK:       Required (https://www.gnu.org/software/gawk/)
  GNU COREUTILS: Required (https://www.gnu.org/software/coreutils/)
- faSomeRecords: Required (http://hgdownload.cse.ucsc.edu/admin/exe/linux.x86_64/)
  GNU Parallel:  Required (https://www.gnu.org/software/parallel/)
+ faSomeRecords: Required (http://hgdownload.cse.ucsc.edu/admin/exe/)
 
 Author:                            Rodolfo Aramayo
 WORK_EMAIL:                        raramayo@tamu.edu
