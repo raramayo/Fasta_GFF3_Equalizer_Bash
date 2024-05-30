@@ -5,7 +5,7 @@
 ## Motivation
 
 The main motivation for creating this script was to be able
-topre-process both transcriptome and proteome FASTA files before
+to pre-process both transcriptome and proteome FASTA files before
 subjecting them to computational analysis.
 
 This script was developed because transcriptome and protein files
