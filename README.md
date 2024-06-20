@@ -55,10 +55,10 @@ more details.
 You should have received a copy of the GNU General Public License along
 with this program. If not, see <https://www.gnu.org/licenses/>.
 
-SCRIPT_NAME:                    Fasta_GFF3_Equalizer_v1.0.0.sh
-SCRIPT_VERSION:                 1.0.0
+SCRIPT_NAME:                    Fasta_GFF3_Equalizer_v1.0.1.sh
+SCRIPT_VERSION:                 1.0.1
 
-USAGE: Fasta_GFF3_Equalizer_v1.0.0.sh
+USAGE: Fasta_GFF3_Equalizer_v1.0.1.sh
  -f Fasta_File.fa               # REQUIRED Fasta Format Transcripts or
                                            Fasta Format  Proteins File
  -g GFF3_Genome_File.gff3       # REQUIRED
@@ -66,8 +66,8 @@ USAGE: Fasta_GFF3_Equalizer_v1.0.0.sh
  -z TMPDIR Location             # OPTIONAL (default=0='TMPDIR Run')
 
 TYPICAL COMMANDS:
- Fasta_GFF3_Equalizer_v1.0.0.sh -f Fasta_Transcripts_File.fa -g GFF3_Genome_File.gff3
- Fasta_GFF3_Equalizer_v1.0.0.sh -f Fasta_Proteins_File.fa -g GFF3_Genome_File.gff3
+ Fasta_GFF3_Equalizer_v1.0.1.sh -f Fasta_Transcripts_File.fa -g GFF3_Genome_File.gff3
+ Fasta_GFF3_Equalizer_v1.0.1.sh -f Fasta_Proteins_File.fa -g GFF3_Genome_File.gff3
 
 INPUT01:          -f FLAG       REQUIRED
 INPUT01_FORMAT:                 Fasta Format File
@@ -101,7 +101,7 @@ DEPENDENCIES:
  GNU AWK:       Required (https://www.gnu.org/software/gawk/)
  GNU COREUTILS: Required (https://www.gnu.org/software/coreutils/)
  GNU Parallel:  Required (https://www.gnu.org/software/parallel/)
- faSomeRecords: Required (http://hgdownload.cse.ucsc.edu/admin/exe/)
+ faSomeRecords: Required (https://hgdownload.soe.ucsc.edu/admin/exe/)
 
 Author:                            Rodolfo Aramayo
 WORK_EMAIL:                        raramayo@tamu.edu

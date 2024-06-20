@@ -82,7 +82,7 @@ DEPENDENCIES:
  GNU AWK:       Required (https://www.gnu.org/software/gawk/)
  GNU COREUTILS: Required (https://www.gnu.org/software/coreutils/)
  GNU Parallel:  Required (https://www.gnu.org/software/parallel/)
- faSomeRecords: Required (http://hgdownload.cse.ucsc.edu/admin/exe/)
+ faSomeRecords: Required (https://hgdownload.soe.ucsc.edu/admin/exe/)
 
 $(func_authors)
 ###########################################################################
@@ -90,13 +90,13 @@ EOF
 };
 
 ## Defining_Script_Current_Version
-version="1.0.0";
+version="1.0.1";
 
 ## Defining_Script_Initial_Version_Data (date '+DATE:%Y/%m/%d')
 version_date_initial="DATE:2022/12/22";
 
 ## Defining_Script_Current_Version_Data (date '+DATE:%Y/%m/%d')
-version_date_current="DATE:2024/05/29";
+version_date_current="DATE:2024/06/20";
 
 ## Testing_Script_Input
 ## Is_the number_of_arguments null?
@@ -221,28 +221,22 @@ if [[ -d ${fastafile%.*}_Fasta_GFF3_Equalizer.tmp ]];then
 fi
 
 ## Generating/Cleaning_TMP_Data_Directory
-if [[ ${tmp_dir} -eq 0 ]];then
+if [[ ${tmp_dir} -eq 0 ]]; then
     ## Defining Script TMP Data Directory
-    var_script_tmp_data_dir=""$(pwd)"/"${fastafile%.*}"_Fasta_GFF3_Equalizer.tmp";
-    export var_script_tmp_data_dir=""$(pwd)"/"${fastafile%.*}"_Fasta_GFF3_Equalizer.tmp";
+    var_script_tmp_data_dir="$(pwd)/${INFILE01%.fa}_Fasta_Seq_Prepare.tmp"
+    export var_script_tmp_data_dir
 
-    if [[ -d ${var_script_tmp_data_dir} ]];then
-        rm -fr ${var_script_tmp_data_dir};
+    if [[ -d ${var_script_tmp_data_dir} ]]; then
+        rm -fr ${var_script_tmp_data_dir}
     fi
 
-    if [[ -z ${TMPDIR} ]];then
-        ## echo "TMPDIR" not defined
-        TMP=$(mktemp -d -p ${TMP}); ## &> /dev/null);
-        var_script_tmp_data_dir=${TMP};
-        export  var_script_tmp_data_dir=${TMP};
+    if [[ -z ${TMPDIR} ]]; then
+        TMPDIR=$(mktemp -d -t tmp.XXXXXX)
     fi
 
-    if [[ ! -z ${TMPDIR} ]];then
-        ## echo "TMPDIR" defined;
-        TMP=$(mktemp -d -p "${TMPDIR}"); ## &> /dev/null);
-        var_script_tmp_data_dir=${TMP};
-        export  var_script_tmp_data_dir=${TMP};
-    fi
+    TMP=$(mktemp -d -p ${TMPDIR} tmp.XXXXXX)
+    var_script_tmp_data_dir=${TMP}
+    export var_script_tmp_data_dir
 fi
 
 if [[ ${tmp_dir} -eq 1 ]];then
