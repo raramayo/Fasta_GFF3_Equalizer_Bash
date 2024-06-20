@@ -223,7 +223,7 @@ fi
 ## Generating/Cleaning_TMP_Data_Directory
 if [[ ${tmp_dir} -eq 0 ]]; then
     ## Defining Script TMP Data Directory
-    var_script_tmp_data_dir="$(pwd)/${INFILE01%.fa}_Fasta_Seq_Prepare.tmp"
+    var_script_tmp_data_dir="$(pwd)/${INFILE01%.fa}_Fasta_GFF3_Equalizer.tmp"
     export var_script_tmp_data_dir
 
     if [[ -d ${var_script_tmp_data_dir} ]]; then
