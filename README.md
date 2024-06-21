@@ -42,6 +42,8 @@ musculus*).
 ###########################################################################
 ARAMAYO_LAB
 
+Copyright (C) 2024 Rodolfo Aramayo
+
 This program is free software: you can redistribute it and/or modify it
 under the terms of the GNU General Public License as published by the Free
 Software Foundation, either version 3 of the License, or (at your option)
@@ -55,10 +57,10 @@ more details.
 You should have received a copy of the GNU General Public License along
 with this program. If not, see <https://www.gnu.org/licenses/>.
 
-SCRIPT_NAME:                    Fasta_GFF3_Equalizer_v1.0.1.sh
-SCRIPT_VERSION:                 1.0.1
+SCRIPT_NAME:                    Fasta_GFF3_Equalizer_v1.0.2.sh
+SCRIPT_VERSION:                 1.0.2
 
-USAGE: Fasta_GFF3_Equalizer_v1.0.1.sh
+USAGE: Fasta_GFF3_Equalizer_v1.0.2.sh
  -f Fasta_File.fa               # REQUIRED Fasta Format Transcripts or
                                            Fasta Format  Proteins File
  -g GFF3_Genome_File.gff3       # REQUIRED
@@ -66,8 +68,8 @@ USAGE: Fasta_GFF3_Equalizer_v1.0.1.sh
  -z TMPDIR Location             # OPTIONAL (default=0='TMPDIR Run')
 
 TYPICAL COMMANDS:
- Fasta_GFF3_Equalizer_v1.0.1.sh -f Fasta_Transcripts_File.fa -g GFF3_Genome_File.gff3
- Fasta_GFF3_Equalizer_v1.0.1.sh -f Fasta_Proteins_File.fa -g GFF3_Genome_File.gff3
+ Fasta_GFF3_Equalizer_v1.0.2.sh -f Fasta_Transcripts_File.fa -g GFF3_Genome_File.gff3
+ Fasta_GFF3_Equalizer_v1.0.2.sh -f Fasta_Proteins_File.fa -g GFF3_Genome_File.gff3
 
 INPUT01:          -f FLAG       REQUIRED
 INPUT01_FORMAT:                 Fasta Format File
@@ -106,6 +108,9 @@ DEPENDENCIES:
 Author:                            Rodolfo Aramayo
 WORK_EMAIL:                        raramayo@tamu.edu
 PERSONAL_EMAIL:                    rodolfo@aramayo.org
+
+Repository: https://github.com/raramayo/Fasta_GFF3_Equalizer_Bash
+Issues:     https://github.com/raramayo/Fasta_GFF3_Equalizer_Bash/issues
 ###########################################################################
 ```
 
